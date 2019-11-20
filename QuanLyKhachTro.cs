@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
 
-namespace DeTaiQuanLyNhaTro
+namespace QLNhaTro
 {
     public partial class QuanLyKhachTro : Form
     {

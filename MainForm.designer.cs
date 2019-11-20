@@ -1,4 +1,4 @@
-﻿namespace Q
+﻿namespace QLNhaTro
 {
     partial class FrmMain
     {
@@ -273,7 +273,7 @@
             // 
             // tSBXemDSKT
             // 
-            this.tSBXemDSKT.Image = ((System.Drawing.Image)(resources.GetObject("tSBXemDSKT.Image")));
+            this.tSBXemDSKT.Image = global::QLNhaTro.Properties.Resources.search;
             this.tSBXemDSKT.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBXemDSKT.Name = "tSBXemDSKT";
             this.tSBXemDSKT.Size = new System.Drawing.Size(216, 60);
@@ -290,7 +290,7 @@
             // 
             // tSBTimKiemThemSuaXoa
             // 
-            this.tSBTimKiemThemSuaXoa.Image = ((System.Drawing.Image)(resources.GetObject("tSBTimKiemThemSuaXoa.Image")));
+            this.tSBTimKiemThemSuaXoa.Image = global::QLNhaTro.Properties.Resources.add1;
             this.tSBTimKiemThemSuaXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tSBTimKiemThemSuaXoa.Name = "tSBTimKiemThemSuaXoa";
             this.tSBTimKiemThemSuaXoa.Size = new System.Drawing.Size(369, 60);
@@ -317,7 +317,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            //this.BackgroundImage = global::QLNhaTro.Properties.Resources.OU;
+            this.BackgroundImage = global::QLNhaTro.Properties.Resources.OU;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1186, 731);
             this.Controls.Add(this.tabControl1);

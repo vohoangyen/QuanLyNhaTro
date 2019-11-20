@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,29 @@
     </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="KiemTra.cs" />
+    <Compile Include="LapHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapHoaDon.designer.cs">
+      <DependentUpon>LapHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhachTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKhachTro.designer.cs">
+      <DependentUpon>QuanLyKhachTro.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaoTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,20 +86,87 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemPhong.designer.cs">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDoanhThu.designer.cs">
+      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThuePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThuePhong.designer.cs">
+      <DependentUpon>ThuePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuPhong.designer.cs">
+      <DependentUpon>TraCuuPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraPhong.designer.cs">
+      <DependentUpon>TraPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDanhSachKhachTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemDanhSachKhachTro.designer.cs">
+      <DependentUpon>XemDanhSachKhachTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemHoaDon.designer.cs">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapHoaDon.resx">
+      <DependentUpon>LapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="QuanLyKhachTro.resx">
+      <DependentUpon>QuanLyKhachTro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaoTK.resx">
       <DependentUpon>TaoTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemPhong.resx">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDoanhThu.resx">
+      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThuePhong.resx">
+      <DependentUpon>ThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuPhong.resx">
+      <DependentUpon>TraCuuPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraPhong.resx">
+      <DependentUpon>TraPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemDanhSachKhachTro.resx">
+      <DependentUpon>XemDanhSachKhachTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemHoaDon.resx">
+      <DependentUpon>XemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -89,6 +180,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\OU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\House-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\add room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\leave room2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\bill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\statistic2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

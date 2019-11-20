@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace QLNhaTro
 {
+    
     public partial class FrmMain : Form
     {
+        
+
         public FrmMain()
         {
             InitializeComponent();
+
         }
 
-
+        
         // click nhieu lan chi hien thi form 1 lan
         private bool CheckExistForm(String name)
         {
@@ -40,7 +44,7 @@ namespace QLNhaTro
         {
             foreach (Form frm in this.MdiChildren)
             {
-                if (frm.Name == name)
+                if(frm.Name == name)
                 {
                     frm.Activate();
                     break;
