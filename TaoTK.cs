@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Drawing.Drawing2D;
 
 namespace QLNhaTro
 {
     public partial class TaoTK : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-QIQ8G50;Initial Catalog=QLNhaTro;Integrated Security=True");
+
         public TaoTK()
         {
             InitializeComponent();
