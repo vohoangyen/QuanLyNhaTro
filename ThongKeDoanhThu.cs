@@ -120,21 +120,7 @@ namespace DeTaiQuanLyNhaTro
            
         }
 
-        private void btnDongY_Click(object sender, EventArgs e)
-        {
-            btnXacNhan();
-        }
-
-        public bool btnXacNhan()
-        {
-            if(ChonNam() == "Đã chọn năm thống kê!")
-            {
-                ThongKeDoanhThu thongKeDoanhThu = new ThongKeDoanhThu();
-                this.Dispose();
-                thongKeDoanhThu.Show();
-                return true;
-            }
-            return false;
-        }
+        
+       
     }
 }
