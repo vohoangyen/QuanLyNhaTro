@@ -47,12 +47,7 @@ namespace DeTaiQuanLyNhaTro
             InitializeComponent();
         }
 
-        private void ThemPhong_Load(object sender, EventArgs e)
-        {
-            connection = new SqlConnection(str);
-            connection.Open();
-            loadData();
-        }
+        
 
         void click()
         {
