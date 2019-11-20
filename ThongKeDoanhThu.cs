@@ -61,13 +61,7 @@ namespace DeTaiQuanLyNhaTro
             
         }
 
-        
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            LinearGradientBrush brush = new LinearGradientBrush(panel1.ClientRectangle, Color.LightSkyBlue, Color.White, LinearGradientMode.Vertical);
-            e.Graphics.FillRectangle(brush, panel1.ClientRectangle);
-        }
+  
 
         
         private void cmbChonNam_SelectedIndexChanged(object sender, EventArgs e)
