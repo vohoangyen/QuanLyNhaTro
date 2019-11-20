@@ -99,10 +99,10 @@ namespace QLNhaTro
                 KiemTra k = new KiemTra();
                 if (k.Check(txtbTenDN.Text, txtMK.Text) == 1)
                 {
-                    this.Hide();
-                    FrmMain f = new FrmMain();
-                    f.ShowDialog();
-                    this.Close();
+                    //this.Hide();
+                    //FrmMain f = new FrmMain();
+                    //f.ShowDialog();
+                    //this.Close();
                 }
                 else
                 {
