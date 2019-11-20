@@ -44,7 +44,10 @@ namespace DeTaiQuanLyNhaTro
         }
         
 
-        
+        public ThemPhong()
+        {
+            InitializeComponent();
+        }
 
         void click()
         {
