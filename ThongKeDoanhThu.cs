@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +11,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
 
-namespace QLNhaTro
+namespace DeTaiQuanLyNhaTro
 {
     public partial class ThongKeDoanhThu : Form
     {
@@ -21,14 +21,14 @@ namespace QLNhaTro
         //tạo truy vấn
         SqlCommand command;
         //chuỗi kết nối
-        string str = @"Data Source=DESKTOP-QIQ8G50;Initial Catalog=QLNhaTro;Integrated Security=True";
+        string str = @"Data Source=DESKTOP-21LUHLN\SQLEXPRESS;Initial Catalog=QLNhaTro;Integrated Security=True";
         //lọc data lên 
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
         DataTable tableNam = new DataTable();
         DataTable tableThang = new DataTable();
         double[] tongThang = new double[12];
-
+        
 
         //hiển thị data
         void loadData(string query, DataTable table, DataGridView dataGridView)
@@ -58,10 +58,10 @@ namespace QLNhaTro
             {
                 cmbChonNam.Items.Add(dgvNam.Rows[i].Cells[0].Value.ToString());
             }
-
+            
         }
 
-
+        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -77,7 +77,7 @@ namespace QLNhaTro
         }
         private void cmbChonNam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ChonNam() == "Đã chọn năm thống kê!")
+            if(ChonNam() == "Đã chọn năm thống kê!")
             {
                 double[] tongThang = new double[12];
 
@@ -105,19 +105,19 @@ namespace QLNhaTro
                 int dem = 0;
                 foreach (DateTime d in dates)                           // duyệt qua từng tháng trong ds dates = 12 tháng
                     S1.Points.AddXY(d, tongThang[dem++]);              // thiet lap gia trị Y ngau nhien cho 12 tháng 
-                                                                       //-> lấy giá trị từ dataGridVie
+                                                                      //-> lấy giá trị từ dataGridVie
                 Axis YA = chartDoanhThu.ChartAreas[0].AxisY;
                 S1.XValueType = ChartValueType.Date;  // set the type
                 XA.MajorGrid.Enabled = false;         // no gridlines
                 XA.LabelStyle.Format = "MM";         // Jan = January
                 XA.IntervalType = DateTimeIntervalType.Months;  // show axis labels.. 
                 XA.Interval = 1;                                // ..moi 1 thang
-                YA.LabelStyle.Format = "##0 vnd";
+                YA.LabelStyle.Format = "##0 vnd";          
                 YA.MajorGrid.Enabled = false;
                 chartDoanhThu.Series[0].IsValueShownAsLabel = true;
                 cmbChonNam.Enabled = false;
             }
-
+           
         }
 
         private void btnDongY_Click(object sender, EventArgs e)
@@ -127,7 +127,7 @@ namespace QLNhaTro
 
         public bool btnXacNhan()
         {
-            if (ChonNam() == "Đã chọn năm thống kê!")
+            if(ChonNam() == "Đã chọn năm thống kê!")
             {
                 ThongKeDoanhThu thongKeDoanhThu = new ThongKeDoanhThu();
                 this.Dispose();
