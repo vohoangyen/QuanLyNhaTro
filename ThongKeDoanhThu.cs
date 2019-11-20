@@ -69,12 +69,7 @@ namespace DeTaiQuanLyNhaTro
             e.Graphics.FillRectangle(brush, panel1.ClientRectangle);
         }
 
-        public string ChonNam()
-        {
-            if (cmbChonNam.Text != "")
-                return "Đã chọn năm thống kê!";
-            return "Chưa chọn năm thống kê!";
-        }
+        
         private void cmbChonNam_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(ChonNam() == "Đã chọn năm thống kê!")
