@@ -34,24 +34,24 @@
             this.tSBTKDoanhThu = new System.Windows.Forms.ToolStripButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.toolStrip4 = new System.Windows.Forms.ToolStrip();
-            this.tSBLapHoaDon = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.tSBXemHoaDon = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.tSBThemPhong = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.tSBTraCuu = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.tSBThuePhong = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.tSBTraPhong = new System.Windows.Forms.ToolStripButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tSBXemDSKT = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tSBTimKiemThemSuaXoa = new System.Windows.Forms.ToolStripButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tSBXemDSKT = new System.Windows.Forms.ToolStripButton();
+            this.tSBTimKiemThemSuaXoa = new System.Windows.Forms.ToolStripButton();
+            this.tSBThemPhong = new System.Windows.Forms.ToolStripButton();
+            this.tSBTraCuu = new System.Windows.Forms.ToolStripButton();
+            this.tSBThuePhong = new System.Windows.Forms.ToolStripButton();
+            this.tSBTraPhong = new System.Windows.Forms.ToolStripButton();
+            this.tSBLapHoaDon = new System.Windows.Forms.ToolStripButton();
+            this.tSBXemHoaDon = new System.Windows.Forms.ToolStripButton();
             this.tabPage4.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -127,30 +127,10 @@
             this.toolStrip4.TabIndex = 0;
             this.toolStrip4.Text = "toolStrip4";
             // 
-            // tSBLapHoaDon
-            // 
-            this.tSBLapHoaDon.Image = global::QLNhaTro.Properties.Resources.bill;
-            this.tSBLapHoaDon.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBLapHoaDon.Name = "tSBLapHoaDon";
-            this.tSBLapHoaDon.Size = new System.Drawing.Size(116, 69);
-            this.tSBLapHoaDon.Text = "Lập hóa đơn";
-            this.tSBLapHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBLapHoaDon.Click += new System.EventHandler(this.tSBLapHoaDon_Click);
-            // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 74);
-            // 
-            // tSBXemHoaDon
-            // 
-            this.tSBXemHoaDon.Image = global::QLNhaTro.Properties.Resources.bill1;
-            this.tSBXemHoaDon.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBXemHoaDon.Name = "tSBXemHoaDon";
-            this.tSBXemHoaDon.Size = new System.Drawing.Size(124, 69);
-            this.tSBXemHoaDon.Text = "Xem hóa đơn";
-            this.tSBXemHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBXemHoaDon.Click += new System.EventHandler(this.tSBXemHoaDon_Click);
             // 
             // tabPage2
             // 
@@ -186,60 +166,20 @@
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
             // 
-            // tSBThemPhong
-            // 
-            this.tSBThemPhong.Image = global::QLNhaTro.Properties.Resources.House_icon__1_;
-            this.tSBThemPhong.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBThemPhong.Name = "tSBThemPhong";
-            this.tSBThemPhong.Size = new System.Drawing.Size(117, 60);
-            this.tSBThemPhong.Text = "Thêm Phòng";
-            this.tSBThemPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBThemPhong.Click += new System.EventHandler(this.tSBThemPhong_Click);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 65);
-            // 
-            // tSBTraCuu
-            // 
-            this.tSBTraCuu.Image = global::QLNhaTro.Properties.Resources.search;
-            this.tSBTraCuu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBTraCuu.Name = "tSBTraCuu";
-            this.tSBTraCuu.Size = new System.Drawing.Size(132, 60);
-            this.tSBTraCuu.Text = "Tra Cứu Phòng";
-            this.tSBTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBTraCuu.Click += new System.EventHandler(this.tSBTraCuu_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 65);
             // 
-            // tSBThuePhong
-            // 
-            this.tSBThuePhong.Image = global::QLNhaTro.Properties.Resources.add_room;
-            this.tSBThuePhong.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBThuePhong.Name = "tSBThuePhong";
-            this.tSBThuePhong.Size = new System.Drawing.Size(111, 60);
-            this.tSBThuePhong.Text = "Thuê Phòng";
-            this.tSBThuePhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBThuePhong.Click += new System.EventHandler(this.tSBThuePhong_Click);
-            // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 65);
-            // 
-            // tSBTraPhong
-            // 
-            this.tSBTraPhong.Image = global::QLNhaTro.Properties.Resources.leave_room2;
-            this.tSBTraPhong.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBTraPhong.Name = "tSBTraPhong";
-            this.tSBTraPhong.Size = new System.Drawing.Size(95, 60);
-            this.tSBTraPhong.Text = "Trả Phòng";
-            this.tSBTraPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBTraPhong.Click += new System.EventHandler(this.tSBTraPhong_Click);
             // 
             // tabPage1
             // 
@@ -271,33 +211,10 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // tSBXemDSKT
-            // 
-            this.tSBXemDSKT.Image = global::QLNhaTro.Properties.Resources.search;
-            this.tSBXemDSKT.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBXemDSKT.Name = "tSBXemDSKT";
-            this.tSBXemDSKT.Size = new System.Drawing.Size(216, 60);
-            this.tSBXemDSKT.Text = "Xem danh sách khách trọ";
-            this.tSBXemDSKT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBXemDSKT.ToolTipText = "Tìm kiếm thông tin khách trọ bằng: tên phòng, tên khách, số chứng minh nhân dân.." +
-    ".";
-            this.tSBXemDSKT.Click += new System.EventHandler(this.tSBXemDSKT_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 65);
-            // 
-            // tSBTimKiemThemSuaXoa
-            // 
-            this.tSBTimKiemThemSuaXoa.Image = global::QLNhaTro.Properties.Resources.add1;
-            this.tSBTimKiemThemSuaXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tSBTimKiemThemSuaXoa.Name = "tSBTimKiemThemSuaXoa";
-            this.tSBTimKiemThemSuaXoa.Size = new System.Drawing.Size(369, 60);
-            this.tSBTimKiemThemSuaXoa.Text = "Tìm kiếm, thêm, sửa, xóa thông tin khách trọ";
-            this.tSBTimKiemThemSuaXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.tSBTimKiemThemSuaXoa.ToolTipText = "Thêm, sửa, xóa thông tin khách trọ";
-            this.tSBTimKiemThemSuaXoa.Click += new System.EventHandler(this.tSBTimKiemThemSuaXoa_Click);
             // 
             // tabControl1
             // 
@@ -313,11 +230,93 @@
             this.tabControl1.Size = new System.Drawing.Size(1186, 114);
             this.tabControl1.TabIndex = 0;
             // 
+            // tSBXemDSKT
+            // 
+            this.tSBXemDSKT.Image = global::QLNhaTro.Properties.Resources.search;
+            this.tSBXemDSKT.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBXemDSKT.Name = "tSBXemDSKT";
+            this.tSBXemDSKT.Size = new System.Drawing.Size(216, 60);
+            this.tSBXemDSKT.Text = "Xem danh sách khách trọ";
+            this.tSBXemDSKT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBXemDSKT.ToolTipText = "Tìm kiếm thông tin khách trọ bằng: tên phòng, tên khách, số chứng minh nhân dân.." +
+    ".";
+            this.tSBXemDSKT.Click += new System.EventHandler(this.tSBXemDSKT_Click);
+            // 
+            // tSBTimKiemThemSuaXoa
+            // 
+            this.tSBTimKiemThemSuaXoa.Image = global::QLNhaTro.Properties.Resources.add1;
+            this.tSBTimKiemThemSuaXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBTimKiemThemSuaXoa.Name = "tSBTimKiemThemSuaXoa";
+            this.tSBTimKiemThemSuaXoa.Size = new System.Drawing.Size(369, 60);
+            this.tSBTimKiemThemSuaXoa.Text = "Tìm kiếm, thêm, sửa, xóa thông tin khách trọ";
+            this.tSBTimKiemThemSuaXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBTimKiemThemSuaXoa.ToolTipText = "Thêm, sửa, xóa thông tin khách trọ";
+            this.tSBTimKiemThemSuaXoa.Click += new System.EventHandler(this.tSBTimKiemThemSuaXoa_Click);
+            // 
+            // tSBThemPhong
+            // 
+            this.tSBThemPhong.Image = global::QLNhaTro.Properties.Resources.House_icon__1_;
+            this.tSBThemPhong.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBThemPhong.Name = "tSBThemPhong";
+            this.tSBThemPhong.Size = new System.Drawing.Size(117, 60);
+            this.tSBThemPhong.Text = "Thêm Phòng";
+            this.tSBThemPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBThemPhong.Click += new System.EventHandler(this.tSBThemPhong_Click);
+            // 
+            // tSBTraCuu
+            // 
+            this.tSBTraCuu.Image = global::QLNhaTro.Properties.Resources.search;
+            this.tSBTraCuu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBTraCuu.Name = "tSBTraCuu";
+            this.tSBTraCuu.Size = new System.Drawing.Size(132, 60);
+            this.tSBTraCuu.Text = "Tra Cứu Phòng";
+            this.tSBTraCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBTraCuu.Click += new System.EventHandler(this.tSBTraCuu_Click);
+            // 
+            // tSBThuePhong
+            // 
+            this.tSBThuePhong.Image = global::QLNhaTro.Properties.Resources.add_room;
+            this.tSBThuePhong.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBThuePhong.Name = "tSBThuePhong";
+            this.tSBThuePhong.Size = new System.Drawing.Size(111, 60);
+            this.tSBThuePhong.Text = "Thuê Phòng";
+            this.tSBThuePhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBThuePhong.Click += new System.EventHandler(this.tSBThuePhong_Click);
+            // 
+            // tSBTraPhong
+            // 
+            this.tSBTraPhong.Image = global::QLNhaTro.Properties.Resources.leave_room2;
+            this.tSBTraPhong.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBTraPhong.Name = "tSBTraPhong";
+            this.tSBTraPhong.Size = new System.Drawing.Size(95, 60);
+            this.tSBTraPhong.Text = "Trả Phòng";
+            this.tSBTraPhong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBTraPhong.Click += new System.EventHandler(this.tSBTraPhong_Click);
+            // 
+            // tSBLapHoaDon
+            // 
+            this.tSBLapHoaDon.Image = global::QLNhaTro.Properties.Resources.bill;
+            this.tSBLapHoaDon.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBLapHoaDon.Name = "tSBLapHoaDon";
+            this.tSBLapHoaDon.Size = new System.Drawing.Size(116, 69);
+            this.tSBLapHoaDon.Text = "Lập hóa đơn";
+            this.tSBLapHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBLapHoaDon.Click += new System.EventHandler(this.tSBLapHoaDon_Click);
+            // 
+            // tSBXemHoaDon
+            // 
+            this.tSBXemHoaDon.Image = global::QLNhaTro.Properties.Resources.bill1;
+            this.tSBXemHoaDon.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tSBXemHoaDon.Name = "tSBXemHoaDon";
+            this.tSBXemHoaDon.Size = new System.Drawing.Size(124, 69);
+            this.tSBXemHoaDon.Text = "Xem hóa đơn";
+            this.tSBXemHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tSBXemHoaDon.Click += new System.EventHandler(this.tSBXemHoaDon_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QLNhaTro.Properties.Resources.OU;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1186, 731);
             this.Controls.Add(this.tabControl1);

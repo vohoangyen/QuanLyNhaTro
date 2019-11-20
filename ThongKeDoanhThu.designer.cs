@@ -1,4 +1,4 @@
-﻿namespace DeTaiQuanLyNhaTro
+﻿namespace QLNhaTro
 {
     partial class ThongKeDoanhThu
     {
@@ -142,8 +142,8 @@
             // 
             // chartDoanhThu
             // 
-            this.chartDoanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.chartDoanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             chartArea1.Name = "ChartArea1";
             this.chartDoanhThu.ChartAreas.Add(chartArea1);

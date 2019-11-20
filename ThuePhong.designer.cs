@@ -1,4 +1,4 @@
-﻿namespace DeTaiQuanLyNhaTro
+﻿namespace QLNhaTro
 {
     partial class ThuePhong
     {
