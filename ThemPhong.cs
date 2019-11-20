@@ -42,10 +42,7 @@ namespace DeTaiQuanLyNhaTro
             nudSoLuongToiDa.Value = 0;
             txtMaPhong.ReadOnly = false;
         }
-        public ThemPhong()
-        {
-            InitializeComponent();
-        }
+        
 
         
 
