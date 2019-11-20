@@ -139,34 +139,7 @@ namespace QLNhaTro
             btnLuuHoaDon.Enabled = true;
         }
 
-        public bool ChonPhong()
-        {
-            if (cmbChonPhong.Text != "")
-                return true;
-            return false;
-        }
-
-        public string NhapDuLieu(string sd, string sn, string gd, string gn, string tp, string slx, string gx, string gw)
-        {
-            if (sd == "" || sn == "" || gd == "" || gn == "" || tp == "" || slx == "" || gx == "" || gw == "")
-            {
-                //if (cBGuiXe.Checked == true || cBWifi.Checked == true)
-                //{
-                //    if (slx == "" || gx == "" || gw == "")
-                //        return "Chưa nhập dữ liệu!";
-                //}
-                return "Chưa nhập dữ liệu!";
-            }
-            return "Đã nhập dữ liệu!";
-        }
-
-        public int TinhTien(int sd, int sn, int gd, int gn, int tp, int slx, int gx, int gw)
-        {
-            int kq = 0;
-            return kq = (sd * gd) + (sn * gn) + tp + (slx * gx) + gw;
-
-        }
-
+        
 
         private void btnLuuHoaDon_Click(object sender, EventArgs e)
         {
