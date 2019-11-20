@@ -61,55 +61,17 @@ namespace DeTaiQuanLyNhaTro
             
         }
 
-  
-
         
-        private void cmbChonNam_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            if(ChonNam() == "Đã chọn năm thống kê!")
-            {
-                double[] tongThang = new double[12];
-
-                label1.Visible = true;
-                loadData("SELECT YEAR(NgayLap), MONTH(NgayLap), TongTien FROM HOADON WHERE YEAR(NgayLap) = '" + cmbChonNam.Text + "'", tableThang, dgvThang);
-
-                for (int i = 0; i < dgvThang.Rows.Count - 1; i++)
-                {
-                    int thang = int.Parse(dgvThang.Rows[i].Cells[1].Value.ToString());
-                    for (int j = 0; j < tongThang.Length; j++)
-                    {
-                        if (thang == j + 1)
-                            tongThang[j] += double.Parse(dgvThang.Rows[i].Cells[2].Value.ToString());
-                    }
-                }
-
-                Axis XA = chartDoanhThu.ChartAreas[0].AxisX;
-                Series S1 = chartDoanhThu.Series[0];
-
-                List<DateTime> dates = new List<DateTime>(); // ds tháng
-                DateTime dt = DateTime.Now;
-                for (int i = 1; i < 13; i++)
-                    dates.Add(new DateTime(dt.Year, i, 1));
-
-                int dem = 0;
-                foreach (DateTime d in dates)                           // duyệt qua từng tháng trong ds dates = 12 tháng
-                    S1.Points.AddXY(d, tongThang[dem++]);              // thiet lap gia trị Y ngau nhien cho 12 tháng 
-                                                                      //-> lấy giá trị từ dataGridVie
-                Axis YA = chartDoanhThu.ChartAreas[0].AxisY;
-                S1.XValueType = ChartValueType.Date;  // set the type
-                XA.MajorGrid.Enabled = false;         // no gridlines
-                XA.LabelStyle.Format = "MM";         // Jan = January
-                XA.IntervalType = DateTimeIntervalType.Months;  // show axis labels.. 
-                XA.Interval = 1;                                // ..moi 1 thang
-                YA.LabelStyle.Format = "##0 vnd";          
-                YA.MajorGrid.Enabled = false;
-                chartDoanhThu.Series[0].IsValueShownAsLabel = true;
-                cmbChonNam.Enabled = false;
-            }
-           
+            LinearGradientBrush brush = new LinearGradientBrush(panel1.ClientRectangle, Color.LightSkyBlue, Color.White, LinearGradientMode.Vertical);
+            e.Graphics.FillRectangle(brush, panel1.ClientRectangle);
         }
 
-        
-       
-    }
-}
+        public string ChonNam()
+        {
+            if (cmbChonNam.Text != "")
+                return "Đã chọn năm thống kê!";
+            return "Chưa chọn năm thống kê!";
+        }
